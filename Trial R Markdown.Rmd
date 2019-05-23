@@ -3,19 +3,6 @@ title: "Mini Paper"
 output: html_document
 ---
 
-```{r}
-data = read.csv('groupdata.csv')
-
-################################################
-# import data, observe structure
-################################################
-data<-read.csv("data/Module1_MeasuringReefs_EM.csv", header = TRUE)
-names(data)
-head(data)
-data$year<-substr(data$date,0,4) # add a column for year only
-head(data)
-```
-```
 
 # Introduction
 
