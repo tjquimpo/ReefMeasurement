@@ -1,0 +1,31 @@
+---
+title: "Mini Paper"
+output: html_document
+---
+
+```{r}
+data = read.csv('groupdata.csv')
+
+################################################
+# import data, observe structure
+################################################
+data<-read.csv("data/Module1_MeasuringReefs_EM.csv", header = TRUE)
+names(data)
+head(data)
+data$year<-substr(data$date,0,4) # add a column for year only
+head(data)
+```
+```
+
+# Introduction
+
+Measuring reef coverage is logistically challenging, hence the application of methods that can minimize effort and cover
+large areas is of importance. 
+
+# Methods
+
+We used field and satellite imagery to estimate the area and perimeter of patch reefs in the Kaneohe Bay.
+
+# Results and Discussion
+
+We showed that field data was less variable than imagery data, which may suggest that observat
